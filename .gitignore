@@ -1,0 +1,17 @@
+# Large embeddings - never commit (1GB+; download locally or via Colab wget)
+glove.6B.300d.txt
+data/glove.6B.300d.txt
+glove.6B.zip
+data/glove.6B.zip
+*.zip
+
+# Local scratch / verification artifacts (not part of the submission)
+_scratch/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# NOTE: data/train.txt, data/dev.txt, data/test.txt are small (~375KB total) and
+# ARE intentionally committable - the notebook's Colab `!git clone` cell expects
+# a data/ folder in the repo. The GitHub Actions grader only reads results.json,
+# so it needs neither the data nor GloVe.
